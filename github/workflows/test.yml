@@ -1,0 +1,13 @@
+name: My First Live Pipeline Test
+
+on: [push]  # Triggers every single time you edit a file
+
+jobs:
+  run-automation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello to the Robot
+        run: echo "The pipeline is working perfectly!"
+        
+      - name: Show Current Date and Time
+        run: date
